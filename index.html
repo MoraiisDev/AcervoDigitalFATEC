@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Acervo FATEC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Fatec</h1>
+        <p>Zona Sul - Dom Paulo Evaristo Arns</p>
+    </div>
+    
+    <div class="main-container">
+        <h1>Cadastre-se agora no Acervo FATEC</h1>
+        <p>A estante dos melhores livros para todos os gostos!</p>
+
+        <div class="form-container">
+            <h2>Informações da conta:</h2>
+            <form id="cadastroForm">
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="first-name">Primeiro Nome</label>
+                        <input type="text" id="first-name" placeholder="Primeiro Nome">
+                    </div>
+                    <div class="input-box">
+                        <label for="last-name">Último Nome</label>
+                        <input type="text" id="last-name" placeholder="Último Nome">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="Senha">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="country">País</label>
+                        <select id="country">
+                            <option value="br">Brasil (Padrão)</option>
+                            <option value="us">Estados Unidos</option>
+                            <option value="pt">Portugal</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="role">Eu sou:</label>
+                        <select id="role">
+                            <option value="student">Estudante (Padrão)</option>
+                            <option value="teacher">Professor</option>
+                            <option value="guest">Convidado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit">ACESSAR O ACERVO</button>
+                <div id="error-message" class="error"></div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
