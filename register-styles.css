@@ -59,3 +59,17 @@ input, select {
       font-size: 19px;
     }
 }
+
+@media (max-width: 768px) {
+  .title-and-subtitle {
+    padding: 45px 10px;
+
+    h1 {
+      font-size: 10vw;
+    }
+
+    .subtitle {
+      font-size: 5vw;
+    }
+  }
+}
