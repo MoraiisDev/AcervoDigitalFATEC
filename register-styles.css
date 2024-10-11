@@ -1,77 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 :root {
   --principal-purple: #5500FF;
   --pure-dark: #000;
   --pure-white: #fff;
-  --variation-blue: #5E8396;
   --button-blue: #4BC1D2;
+  --variation-blue: #5E8396;
 }
 
-body {
-  background-color: var(--pure-dark);
-  color: var(--pure-white);
+.title-and-subtitle {
+padding: 45px 130px 62px;
+
+  h1 {
+    font-size: 72px;
+  }
+
+  .subtitle {
+    font-size: 29px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
 }
 
-.header {
-  text-align: center;
-  padding: 20px;
-}
-
-.image > img {
-  width: 116px;
-  height: 70px;
-}
-
-.main-container {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-h1 {
-  font-size: 2.5em;
-  font-weight: bold;
-}
-
-p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
-
-.form-container {
-  background-color: var(--principal-purple);
-  padding: 20px;
-  border-radius: 8px;
-  display: inline-block;
-  max-width: 600px;
-  width: 100%;
-}
-
-h2 {
-  text-align: left;
-  margin-bottom: 20px;
-  color: var(--pure-dark);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-group {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.input-box {
-  width: 48%;
-}
 
 input, select {
   width: 100%;
@@ -81,20 +29,32 @@ input, select {
   font-size: 1em;
 }
 
-input::placeholder {
-  color: var(--light-gray);
+.form-container {
+  h2 {
+    font-size: 29px;
+  }
 }
 
-button {
-  background-color: var(--button-blue);
-  color: var(--pure-white);
-  padding: 10px 0;
-  border: none;
-  border-radius: 4px;
-  font-size: 1.2em;
-  cursor: pointer;
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+
+  .input-box {
+    text-align: start;
+    label {
+        color: var(--pure-dark);
+        font-size: 14px;
+      }
+  }
 }
 
-button:hover {
-  background-color: #00b0d1;
+.button-submit {
+  text-align: start;
+  margin-top: 40px;
+    button {
+      margin-bottom: 10px;
+      padding: 10px 30px;
+      font-size: 19px;
+    }
 }
